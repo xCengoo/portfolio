@@ -64,3 +64,21 @@ section:nth-child(3) {
 section:nth-child(4) {
     animation-delay: 0.6s;
 }
+
+#getUpButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #2a4d7a;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#getUpButton:hover {
+    opacity: 0.8;
+}
