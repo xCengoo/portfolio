@@ -1,3 +1,16 @@
+// Initial profile image flip animation
+document.addEventListener('DOMContentLoaded', () => {
+    const profileWrapper = document.querySelector('.profile-image-wrapper');
+    // Kleine Verzögerung, damit die Animation nach dem Laden der Seite startet
+    setTimeout(() => {
+        profileWrapper.classList.add('initial-flip');
+        // Entferne die Klasse nach der Animation, damit der Hover-Effekt normal funktioniert
+        profileWrapper.addEventListener('animationend', () => {
+            profileWrapper.classList.remove('initial-flip');
+        }, { once: true });
+    }, 500);
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
