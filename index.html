@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cengiz Karabulut | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2a4d7a',
+                        secondary: '#3a6ea5',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary">CK</a>
+                <div class="space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">Über mich</a>
+                    <a href="#experience" class="text-gray-600 hover:text-primary transition-colors">Erfahrung</a>
+                    <a href="#skills" class="text-gray-600 hover:text-primary transition-colors">Skills</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl">
+                    <img src="cengiz-karabulut.jpg" alt="Cengiz Karabulut" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Cengiz Karabulut</h1>
+                    <h2 class="text-xl md:text-2xl text-secondary mb-6">Anwendungsentwickler in Ausbildung</h2>
+                    <p class="text-gray-600 max-w-xl">
+                        E-Mail: cengiz.krblt@outlook.de
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8">Über mich</h2>
+            <div class="max-w-3xl">
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Mit einem spannenden Werdegang vom Küchenchef zum angehenden Anwendungsentwickler bringe ich eine
+                    einzigartige Perspektive in die Tech-Branche. Meine Erfahrung in der Gastronomie hat mir
+                    beigebracht, unter Druck präzise zu arbeiten, Teams zu führen und kreative Lösungen zu finden -
+                    Fähigkeiten, die ich nun in der Softwareentwicklung einsetze.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Als mehrsprachiger Entwickler mit Deutsch und Türkisch als Muttersprachen und guten
+                    Englischkenntnissen bin ich bestens für die internationale Tech-Welt gerüstet. Meine Leidenschaft
+                    für kontinuierliches Lernen und mein Auge fürs Detail machen mich zu einem vielversprechenden
+                    Nachwuchsentwickler.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8">Berufserfahrung</h2>
+            <div class="space-y-6 max-w-3xl">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-secondary">Anwendungsentwickler (Umschulung)</h3>
+                        <span class="text-gray-500">02.2025 - Aktuell</span>
+                    </div>
+                    <p class="text-gray-600">TASys (Neuss)</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-secondary">Küchenchef</h3>
+                        <span class="text-gray-500">04.2023 – 02.2024</span>
+                    </div>
+                    <p class="text-gray-600">Haus Meer x Anthonys Kitchen (Meerbusch)</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-secondary">Sous Chef</h3>
+                        <span class="text-gray-500">09.2021 – 04.2024</span>
+                    </div>
+                    <p class="text-gray-600">Anthonys Kitchen (Meerbusch)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-8">Skills & Kompetenzen</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
+                <div>
+                    <h3 class="text-xl font-semibold text-secondary mb-4">Technische Fähigkeiten</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="w-32 text-gray-600">Entwicklung:</span>
+                            <span class="text-gray-800">HTML, CSS, JavaScript</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32 text-gray-600">Frameworks:</span>
+                            <span class="text-gray-800">Tailwind CSS</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32 text-gray-600">Tools:</span>
+                            <span class="text-gray-800">Git, VS Code, Office-Suite</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-secondary mb-4">Sprachen</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="w-32 text-gray-600">Deutsch:</span>
+                            <span class="text-gray-800">Muttersprache</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32 text-gray-600">Türkisch:</span>
+                            <span class="text-gray-800">Muttersprache</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32 text-gray-600">Englisch:</span>
+                            <span class="text-gray-800">B1 (Business English)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>&copy; 2025 Cengiz Karabulut. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
