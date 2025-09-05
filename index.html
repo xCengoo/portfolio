@@ -26,7 +26,7 @@
     <nav class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold text-primary">CK</a>
+                <button class="text-2xl font-bold text-primary hover:text-secondary transition-colors cursor-pointer" onclick="scrollToTop()">CK</button>
                 <div class="space-x-6">
                     <a href="#about" class="text-gray-600 hover:text-primary transition-colors">Über mich</a>
                     <a href="#experience" class="text-gray-600 hover:text-primary transition-colors">Erfahrung</a>
@@ -59,7 +59,8 @@
                 </div>
                 <div class="text-center md:text-left">
                     <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Cengiz Karabulut</h1>
-                    <h2 class="text-xl md:text-2xl text-secondary mb-6">Anwendungsentwickler in Ausbildung</h2>
+                    <h2 class="text-xl md:text-2xl text-secondary mb-2">Anwendungsentwickler in Ausbildung</h2>
+                    <p class="text-gray-600">02.2025 - 02.2027</p>
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
                         <h3 class="text-xl font-semibold text-secondary">Sous Chef</h3>
-                        <span class="text-gray-500">09.2021 – 04.2024</span>
+                        <span class="text-gray-500">09.2021 – 04.2023</span>
                     </div>
                     <p class="text-gray-600">Anthonys Kitchen (Meerbusch)</p>
                 </div>
@@ -118,40 +119,51 @@
     <section id="skills" class="py-12 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-primary mb-8">Skills & Kompetenzen</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
                 <div>
                     <h3 class="text-xl font-semibold text-secondary mb-4">Technische Fähigkeiten</h3>
                     <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600">Entwicklung:</span>
-                            <span class="text-gray-800">HTML, CSS, JavaScript</span>
+                        <li class="p-3 bg-white rounded-lg shadow-sm">
+                            <span class="block text-primary font-medium mb-1">Entwicklung</span>
+                            <span class="text-gray-700">HTML, CSS, JavaScript, Python</span>
                         </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600">Frameworks:</span>
-                            <span class="text-gray-800">Tailwind CSS</span>
+                        <li class="p-3 bg-white rounded-lg shadow-sm">
+                            <span class="block text-primary font-medium mb-1">Frameworks</span>
+                            <span class="text-gray-700">Tailwind CSS</span>
                         </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600">Tools:</span>
-                            <span class="text-gray-800">Git, VS Code, Office-Suite</span>
+                        <li class="p-3 bg-white rounded-lg shadow-sm">
+                            <span class="block text-primary font-medium mb-1">Tools</span>
+                            <span class="text-gray-700">Git, VS Code, Office-Suite</span>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold text-secondary mb-4">Sprachen</h3>
                     <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600">Deutsch:</span>
-                            <span class="text-gray-800">Muttersprache</span>
+                        <li class="p-3 bg-white rounded-lg shadow-sm">
+                            <span class="block text-primary font-medium mb-1">Deutsch</span>
+                            <span class="text-gray-700">Muttersprache</span>
                         </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600">Türkisch:</span>
-                            <span class="text-gray-800">Muttersprache</span>
+                        <li class="p-3 bg-white rounded-lg shadow-sm">
+                            <span class="block text-primary font-medium mb-1">Türkisch</span>
+                            <span class="text-gray-700">Muttersprache</span>
                         </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600">Englisch:</span>
-                            <span class="text-gray-800">B1 (Business English)</span>
+                        <li class="p-3 bg-white rounded-lg shadow-sm">
+                            <span class="block text-primary font-medium mb-1">Englisch</span>
+                            <span class="text-gray-700">B1 (Business English)</span>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-secondary mb-4">Projekte</h3>
+                    <a href="https://github.com/xCengoo" target="_blank" rel="noopener noreferrer" 
+                       class="block w-48 h-48 mx-auto">
+                        <div class="rounded-full overflow-hidden bg-gray-900 flex items-center justify-center w-full h-full">
+                            <svg height="50%" viewBox="0 0 16 16" class="fill-white">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

@@ -48,10 +48,13 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Scroll to top button click handler
-scrollToTopButton.addEventListener('click', () => {
+// Scroll to top function that can be called from HTML
+window.scrollToTop = () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
-});
+};
+
+// Scroll to top button click handler
+scrollToTopButton.addEventListener('click', scrollToTop);
